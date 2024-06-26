@@ -1,0 +1,3 @@
+q1 = ("On a scale of 1 to 5 stars, how many stars do you give Interstellar?")
+rating = eval(input(q1))
+print("Cool!  I give it 5 stars!  So that is", 5-rating, "stars less than my rating.")
