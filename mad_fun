@@ -1,0 +1,8 @@
+# John Schlautman
+# Assignment of some math functions
+
+from math import sqrt
+dec = eval(input("Give me a decimal number. "))
+print("The absolute value of", dec, "is", abs(dec),".")
+print(dec, "rounded to 0 decimals places is",round(dec),".")
+print("The square root of the rounded number's absolute value absolute value is",sqrt(round(abs(dec))),".")
