@@ -1,6 +1,6 @@
 #John Schlautman
 #Poem Assignment
 
-noun = input("Give me a plural noun.")
-adj = input("Give me an adjective.")
-print(noun.capitalize(), "are red, violets are blue\nMonty Python is", adj, "woo-hoo!")
+noun = input("Give me a plural noun. ")
+adj = input("Give me an adjective. ")
+print(noun.capitalize(), "are red, violets are blue\nMonty Python is", adj, ", woo-hoo!")
