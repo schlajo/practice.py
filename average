@@ -1,0 +1,8 @@
+# John Schlautman
+# Output the average of 10 numbers that the user enters.
+
+s = 0
+for i in range(10):
+  num = float(input("Enter a real number: "))
+  s += num
+print(s / 10)
