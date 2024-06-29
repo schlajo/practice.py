@@ -1,0 +1,12 @@
+# John Schlautamn
+
+sat = "Saturday"
+sun = "Sunday"
+
+dow = input("What day is it?")
+if dow == sat.casefold:
+  print("Wake up at 9 am")
+elif dow == sun.casefold:
+  print("Wake up at 10 am")
+else:
+  print("Wake up at 7 am")
