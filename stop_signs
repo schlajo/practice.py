@@ -1,0 +1,44 @@
+# John Schlautman
+# Stop Signs Assignment written on Turtle Trinkets
+
+import turtle
+
+turtle.shape("turtle")
+turtle.speed(0)
+turtle.color("red")
+turtle.pensize(3)
+
+len = 150
+
+def back(len):
+  turtle.penup()
+  turtle.back(len)
+  turtle.pendown()
+
+#forward helper function
+def forward(len):
+  back(-1 * len)
+
+back(len)
+
+def rectangle(width, height):
+  for i in range(2):
+    turtle.forward(width)
+    turtle.right(90)
+    turtle.forward(height)
+    turtle.right(90)
+ 
+def octagon(side):
+  for i in range(8):
+    turtle.forward(side)
+    turtle.left(45)
+ 
+def stop(side):
+    octagon(side)
+    turtle.forward(3/8 * side)
+    rectangle(1/5 * side, 2 * side)
+
+stop(50)
+turtle.color("blue")
+forward(len)
+stop(75)
