@@ -1,0 +1,48 @@
+#Week 3 Day 5 Homework Questions 1-4
+
+#1
+dataIn = open('file.txt')
+for line in dataIn:
+  print("-", line.rstrip())
+dataIn.close()
+
+#2
+filename = input("What is the name of your file?" )
+fileOut = open(filename, "w")
+prompt = "Please enter a number ('0' to finish') "
+response = eval(input(prompt))
+while response != 0:
+  print(response, file = fileOut)
+  response = eval(input(prompt))
+fileOut.close
+ 
+#3
+def count_lines(filename):
+  total = 0
+  for line in open(filename):
+    total += 1
+  return filename + " : " + str(total)
+
+list = ["text1.txt", "text2.txt", "text3.txt"]
+out = open("counts.txt", "w")
+for file in list:
+  print(count_lines(file), file=out)
+out.close()
+
+#4
+list = ["text1.txt", "text2.txt", "text3.txt"]
+out = open("counts.txt", "w")
+tot_lines = 0
+tot_words = 0
+for file in list:
+  lines = 0
+  words = 0
+  for line in open(file):
+    lines += 1
+    words += len(line.split(" "))
+  tot_lines += lines
+  tot_words += words
+  print(file, ":", lines, "lines,", words, "words", file=out)
+
+print("Total:", tot_lines, "lines,", tot_words, "words", file=out)
+out.close()
