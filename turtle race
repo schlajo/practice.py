@@ -1,0 +1,52 @@
+import turtle
+
+def start(turtle, color, x, y):
+      turtle.penup()
+      turtle.color(color)
+      turtle.width(5)
+      turtle.goto(x,y)
+      
+def race(turtle):
+  turtle.pendown()
+  for i in range(5):
+    turtle.forward(10)
+
+ref = turtle.Turtle()
+ref.shape("turtle")
+
+johnny = turtle.Turtle()
+johnny.shape("turtle")
+
+bobby = turtle.Turtle()
+bobby.shape("turtle")
+
+tommy = turtle.Turtle()
+tommy.shape("turtle")
+
+start(ref, "black", -125, 50)
+start(tommy, "green", -150, 15)
+start(johnny, "blue", -150, 0)
+start(bobby, "yellow", -150, -15)
+
+ref.speed(5)
+ref.right(90)
+ref.pendown()
+ref.forward(100)
+ref.penup()
+ref.left(90)
+ref.forward(265)
+ref.left(90)
+ref.pendown()
+ref.forward(100)
+
+def main():
+    race(tommy)
+    race(johnny)
+    race(bobby)
+
+main()
+main()
+main()
+main()
+main()
+main()
